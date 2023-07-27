@@ -1,0 +1,166 @@
+
+/* HEADER */
+
+  /* Adding background image */
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+  body {
+    background-image: url("http://flordeibez.org/wp-content/uploads/2022/11/capa_luzes_no_espaco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    padding-bottom:200px;
+    position:relative;
+  }    
+  
+  body::before {
+    content: ""; /* Adicione um conteúdo vazio ao pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Define a cor preta para a camada */
+    opacity: 0.4; /* Ajuste a opacidade conforme necessário */
+    z-index: -1; /* Coloque o pseudo-elemento abaixo do conteúdo (background) do body */
+  }
+
+
+/* Logo size */
+
+.avatar {
+  display:flex;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+.avatar img {
+    width: 80px;
+    margin-top: -40px auto 0;
+    display: block;
+
+}
+
+
+/* Changing body and titles font family and size */
+.title h1{
+    font-family: 'Julius Sans One', sans-serif;
+    margin-bottom:-20px;
+    color: #fefdf9
+  }
+
+.subtlt h2 {
+    font-size:18px;
+    color: #fefdf9
+}  
+  
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+  
+.container {
+  margin-top: 20px;
+  padding-top: 50px;
+  margin:bottom:100px;
+  padding-bottom:50px;
+  align-items: center;
+  display:flex;
+  flex-direction:column;
+}
+  
+/* For center grid document */
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  
+
+/* LISTAS */
+
+
+
+/* Adjustments on lists */
+ul {
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  i {
+    margin-right: px; /* Space between text and icon */
+  }
+
+
+/* negative margin to h2 subtitle */
+.subtlt h2 {
+    margin-top: -20px;
+  }
+
+  /* Estilos para a lista de ícones sociais */
+  ul.social-icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usa o flexbox para criar um container flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    width: 100%;
+  }
+  
+
+  /* Estilos para cada ícone social */
+  .social {
+    display:inline-table;
+    text-align: center; /* Espaçamento entre os ícones (ajuste conforme necessário) */
+    margin-right:30px;
+  }
+
+  a {
+    display: flex;
+    margin-bottom:10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid white;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    gap: 20px;
+    align-items: center;
+    border-radius: 4px;
+    transition-duration: 200ms;
+    background: linear-gradient(135deg, rgba(235, 243, 162, 0.61), rgba(177, 110, 164, 0.5));
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(13px);
+    border-radius: 10px;
+    border:1px solid rgba(255, 212, 212, 0.479);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+a:hover {
+    background: white;
+    color: #332929;
+    font-weight: bold;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.61), rgba(199, 115, 182, 0.5));
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(13px);
+    border-radius: 10px;
+    border:1px solid rgba(255, 212, 212, 0.479);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+a i {
+    font-size: 1.3em;
+}
